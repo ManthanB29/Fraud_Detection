@@ -33,8 +33,8 @@ two independent evaluation views (score bands and risk categories).
 ---
 
 ## Repository Structure
-
-fraud-detection-risk-framework/
+```
+Fraud_Detection/
 │
 ├── data/ # Raw data samples (see Data Source below)
 │
@@ -43,7 +43,6 @@ fraud-detection-risk-framework/
 │ ├── validation.py # Dataset overview, schema, cardinality checks
 │ └── eda.py # Distribution, outlier, skewness, correlation EDA
 │
-├── notebooks/
 │ └── eda_and_time_split.ipynb # Raw-data EDA that informed SQL design choices
 │
 ├── sql/
@@ -80,9 +79,11 @@ fraud-detection-risk-framework/
 │ └── score_band_train_vs_validation.sql
 │
 ├── dashboard/
-│ └── Fraud_Detection.twbx # Tableau workbook (or link to Tableau Public)
+│ └── Fraud_Detection.twbx 
 │ └── Dashboard csvs
-
+│
+└── README.md
+```
 
 ---
 
@@ -166,4 +167,4 @@ See `dashboard/` or the https://public.tableau.com/views/FraudDetection_17856955
 - **Executive Summary** — headline validation results (lift curve, risk
   category comparison, score band distribution)
 - **Deep Dive** — pillar contribution breakdown, score distribution,
-  fraud-rate-over-time, amount-vs-risk scatter
+  fraud-rate-over-time, amount-vs-risk score
